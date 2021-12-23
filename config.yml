@@ -1,0 +1,18 @@
+# Form fields and valid input needed to log in. If your login form has
+# more fields, simply add their ID and the input and the script should
+# Still work fine! If it has less fields, simply comment out those
+# lines with a # symobol at the beginning. Some login forms might have
+# hidden fields, so be aware of this.
+form_input:
+  userid: user
+  password: password
+  branch: EXAMPLE
+  register_id: noregister
+# Base KOHA domain URL, used to construct URL to download borrowers.db
+koha_base: https://koha.example.com
+# Main landing page for KOHA, used to login and creat a session cookie
+koha_main: https://koha.example.com/cgi-bin/koha/mainpage.pl
+# Page where the access files are located in your KOHA install
+koha_file: https://koha.example.com/cgi-bin/koha/tools/access_files.pl
+# Output location for borrowers.db file, you can rename it here too
+destination: C:\output\borrowers.db
